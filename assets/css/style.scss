@@ -6,3 +6,255 @@
 .sortable-code {
   width: 56%;
 }
+
+/* ===== ESTILO GERAL ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f4f8; /* Azul muito claro para o fundo geral */
+    color: #333;
+}
+
+/* ===== CABEÇALHO COM LOGO DA UPE ===== */
+header {
+    background-color: #003366; /* Azul escuro UPE */
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo-upe {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-upe img {
+    height: 60px;
+    width: auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.logo-upe h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: white;
+}
+
+.titulo-pagina {
+    font-size: 1.2em;
+    color: #ffcc00; /* Amarelo para contraste, opcional */
+    text-align: right;
+}
+
+/* ===== TÍTULOS ===== */
+h1, h2, h3 {
+    color: #003366; /* Azul escuro */
+    margin-top: 30px;
+    border-bottom: 3px solid #cc0000; /* Vermelho */
+    padding-bottom: 8px;
+}
+
+h1 {
+    font-size: 2.2em;
+    border-bottom: 4px solid #cc0000;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
+    border-bottom: 2px solid #cc0000;
+}
+
+/* ===== SEÇÕES DE EXERCÍCIOS ===== */
+section, .problema {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,51,102,0.1);
+    border-left: 6px solid #cc0000; /* Vermelho */
+}
+
+/* ===== ÁREAS DE DRAG AND DROP (PARSONS) ===== */
+/* Estilizando as áreas "Drag from here" e "Construct your solution here" */
+.drag-area, .construct-area {
+    background-color: #f9f9f9;
+    border: 2px dashed #003366; /* Azul */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 1em;
+}
+
+.drag-area {
+    border-color: #cc0000; /* Vermelho para área de origem */
+    background-color: #fff5f5;
+}
+
+.construct-area {
+    border-color: #003366; /* Azul para área de construção */
+    background-color: #f0f8ff;
+}
+
+/* Itens dentro das áreas (os blocos de código) */
+.drag-item, .code-block {
+    background-color: white;
+    border: 1px solid #003366;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    display: inline-block;
+    cursor: grab;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: 'Courier New', monospace;
+    color: #003366;
+    transition: transform 0.2s;
+}
+
+.drag-item:hover, .code-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(204,0,0,0.3);
+    border-color: #cc0000;
+}
+
+/* =----- BOTÕES E INTERAÇÕES (se houver) ----- */
+button, .botao {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+button:hover, .botao:hover {
+    background-color: #cc0000;
+}
+
+button.secondary {
+    background-color: white;
+    color: #003366;
+    border: 2px solid #003366;
+}
+
+button.secondary:hover {
+    background-color: #003366;
+    color: white;
+}
+
+/* =----- DESTAQUE PARA CÓDIGO ----- */
+pre, code {
+    background-color: #f4f4f4;
+    border-left: 4px solid #cc0000;
+    padding: 12px;
+    border-radius: 0 5px 5px 0;
+    font-family: 'Courier New', monospace;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* =----- LINKS ----- */
+a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #cc0000;
+    padding-bottom: 2px;
+}
+
+a:hover {
+    color: #cc0000;
+    border-bottom-color: #003366;
+}
+
+/* =----- RODAPÉ ----- */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ffcc00;
+    border-bottom: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* =----- NOTAS DE IMPLEMENTAÇÃO (conteúdo extra) ----- */
+.notas {
+    background-color: #e7f3ff;
+    border: 1px solid #003366;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.notas strong {
+    color: #cc0000;
+}
+
+/* =----- EXEMPLO DE NEXT LINK (como mencionado no fim) ----- */
+.link-next {
+    display: inline-block;
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0;
+    border-bottom: none;
+}
+
+.link-next:hover {
+    background-color: #cc0000;
+    color: white;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo-upe {
+        flex-direction: column;
+    }
+    .titulo-pagina {
+        text-align: center;
+        margin-top: 10px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}

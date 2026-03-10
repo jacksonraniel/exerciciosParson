@@ -7,38 +7,93 @@ title: Entrada e saída de dados
 ## Problema 1: Gerador de E-mail
 Peça o nome e o domínio da empresa para gerar um e-mail como saída.
 
-<div id="parsons-1" class="parsons-problem">
-  <script type="text/javascript">
-    var initial = "nome = input(\"Digite seu nome: \")\n" +
-      "empresa = input(\"Digite o domínio da empresa: \")\n" +
-      "print(f\"Seu e-mail é: {nome}@{empresa}\")";
-    var p = new ParsonsWidget({
-      "sortableId": "parsons-1",
-      "grader": ParsonsWidget._graders.LineBasedGrader,
-      "lang": "en"
-    });
-    p.init(initial);
-    p.shuffleLines();
-  </script>
-</div>
+<div id="sortableTrash" class="sortable-code"></div> 
+<div id="sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "nome = input(&quot;Digite seu nome: &quot;)
+\n" +
+    "empresa = input(&quot;Digite o domínio da empresa: &quot;)
+\n" +
+    "print(f&quot;Seu e-mail é: {nome}@{empresa}&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
 
 ## Problema 2: Crachá de Evento
 Monte um crachá que exiba o nome em uma linha e a categoria (VIP/Estudante) na outra.
 
-<div id="parsons-2" class="parsons-problem">
-  <script type="text/javascript">
-    var initial = "nome = input(\"Nome: \")\n" +
-      "tipo = input(\"Categoria: \")\n" +
-      "print(\"--- CRACHÁ ---\")\n" +
-      "print(f\"NOME: {nome}\\nSTATUS: {tipo}\")\n" +
-      "input(\"Nome: \") = nome #distractor\n" +
-      "print(\"STATUS: {tipo}\") #distractor";
-    var p = new ParsonsWidget({
-      "sortableId": "parsons-2",
-      "max_wrong_lines": 2,
-      "grader": ParsonsWidget._graders.LineBasedGrader
-    });
-    p.init(initial);
-    p.shuffleLines();
-  </script>
-</div>
+<div id="sortableTrash" class="sortable-code"></div> 
+<div id="sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "nome = input(&quot;Nome: &quot;)
+\n" +
+    "tipo = input(&quot;Categoria: &quot;)
+\n" +
+    "print(&quot;--- CRACHÁ ---&quot;)
+\n" +
+    "print(f&quot;NOME: {nome}\nSTATUS: {tipo}&quot;)
+\n" +
+    "input(&quot;Nome: &quot;) = nome
+\n" +
+    "#distractor
+\n" +
+    "print(&quot;STATUS: {tipo}&quot;#distractor";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true,
+    "trashId": "sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+### Navegação
+

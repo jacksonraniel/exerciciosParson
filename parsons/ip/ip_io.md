@@ -89,4 +89,4 @@ Monte um crachá que exiba o nome em uma linha e a categoria (VIP/Estudante) na 
 
 ### Navegação
 [Índice da disciplina](../parsons/ip.html)
-[Página inicial](./index.html)
+[Página inicial](../index.html)

@@ -1,4 +1,3 @@
 # Aulas
 
-[1 - I/O](./parsons/ip/ip_io.html)
-[1 - T](./parsons/ip/teste.html)
+[1 - I/O](./parsons/ip_io.html)

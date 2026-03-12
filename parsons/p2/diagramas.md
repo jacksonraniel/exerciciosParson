@@ -12,7 +12,7 @@ Crie um diagrama de classes conceitual que represente as classes **Livro** e **U
 
 **Solução:**
 
-![Diagrama de classes Livro e Usuario](img/we1-classes-livro-usuario.png)
+![Diagrama de classes Livro e Usuario](./img/we1-classes-livro-usuario.png)
 
 **Explicação:**  
 - As classes são nomeadas no singular, com substantivos do domínio.  
@@ -31,7 +31,7 @@ Adicione a associação ao diagrama anterior, incluindo o nome da associação (
 
 **Solução:**
 
-![Diagrama de associação entre Livro e Usuario com multiplicidades](img/we2-associacao-emprestimo.png)
+[Diagrama de associação entre Livro e Usuario com multiplicidades](img/we2-associacao-emprestimo.png)
 
 **Explicação:**  
 - A seta de navegabilidade (opcional) indica que o livro "conhece" seu usuário.  

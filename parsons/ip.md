@@ -9,3 +9,5 @@
 [4 - Estruturas de repetição](./ip/ip_rep.html)
 
 [5 - Funções e procedimentos](./ip/ip_func.html)
+
+[6 - Vetores - Estruturas compostas homogêneas unidimensionais](./ip/ip_vec.html)

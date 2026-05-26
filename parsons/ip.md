@@ -11,3 +11,5 @@
 [5 - Funções e procedimentos](./ip/ip_func.html)
 
 [6 - Vetores - Estruturas compostas homogêneas unidimensionais](./ip/ip_vec.html)
+
+[7 - Strings - fatiamento e manipulação](./ip/ip_string.html)

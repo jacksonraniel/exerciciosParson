@@ -13,3 +13,5 @@
 [6 - Vetores - Estruturas compostas homogêneas unidimensionais](./ip/ip_vec.html)
 
 [7 - Strings - fatiamento e manipulação](./ip/ip_string.html)
+
+[8 - Matrizes - Estruturas compostas homogêneas unidimensionais](./ip/ip_matriz.html)

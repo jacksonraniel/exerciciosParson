@@ -15,3 +15,5 @@
 [7 - Strings - fatiamento e manipulação](./ip/ip_string.html)
 
 [8 - Matrizes - Estruturas compostas homogêneas unidimensionais](./ip/ip_matriz.html)
+
+[9 - Registros - Implementação com Dicionários](./ip/ip_registro.html)
